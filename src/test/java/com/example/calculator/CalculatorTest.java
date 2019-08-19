@@ -52,4 +52,20 @@ public class CalculatorTest {
         int result = calc.divide(10,0);
         assertEquals(0, result);
     }
+
+    @Test
+    public void test_양수뺄셈() {
+        Calculator calc = new Calculator();
+        int result = calc.add(5,4);
+
+        assertNotEquals(1, result);
+    }
+
+    @Test
+    public void test_양수곱셈() {
+        Calculator calc = new Calculator();
+        int result = calc.add(5,4);
+
+        assertNotEquals(20, result);
+    }
 }
