@@ -58,7 +58,7 @@ public class CalculatorTest {
         Calculator calc = new Calculator();
         int result = calc.add(5,4);
 
-        assertNotEquals(1, result);
+        assertNotEquals("두 뺄셈의 차는 1이어야 합니다",1, result);
     }
 
     @Test
@@ -66,6 +66,6 @@ public class CalculatorTest {
         Calculator calc = new Calculator();
         int result = calc.add(5,4);
 
-        assertNotEquals(20, result);
+        assertNotEquals("두 곱셈은 20이어야 합니다",20, result);
     }
 }
